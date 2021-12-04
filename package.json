@@ -1,0 +1,27 @@
+{
+  "name": "blognodejs",
+  "version": "0.0.1",
+  "description": "Blog builts with nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andylampi/BlogNodejs.git"
+  },
+  "author": "Andrea Lampitelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andylampi/BlogNodejs/issues"
+  },
+  "homepage": "https://github.com/andylampi/BlogNodejs#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14",
+    "mongoui": "^4.2.1",
+    "node-dev": "^7.1.0",
+    "pug": "^3.0.2"
+  }
+}
