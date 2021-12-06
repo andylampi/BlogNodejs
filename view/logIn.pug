@@ -1,0 +1,18 @@
+extends ./registration.pug 
+
+
+block body 
+    div(id="registrationForm")
+        div(id="circleDad")
+            p(id="firstCircle")
+            p(id="secondCircle")
+            p(id="thirdCircle")
+            p(id="firstLine")
+            p(id="secondLine")
+        form(action="/auth/verification/", method="POST")
+            input(type="text", name="username", id="username",placeholder="username")
+            input(type="password", name="password", id="password", placeholder="password")
+            button Log In
+
+
+            

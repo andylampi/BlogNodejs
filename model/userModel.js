@@ -4,6 +4,9 @@ let UserSchema = mongoose.Schema({
     name: String,
     surname: String,
     age: Number,
+    username : String,
+    password : String,
+    is_admin : {type : Boolean, default : false}
 })
 
 module.exports = UserSchema

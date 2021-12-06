@@ -1,0 +1,23 @@
+extends new_post.pug
+
+block head
+        style 
+                include ./css/registration.css
+block body 
+        div(id="registrationForm")
+                div(id="circleDad")
+                        p(id="firstCircle")
+                        p(id="secondCircle")
+                        p(id="thirdCircle")
+                        p(id="firstLine")
+                        p(id="secondLine")
+                form(action="/auth/register/", method="post")
+                        input(type="text", name="name", id="name", placeholder="name")
+                        input(type="text", name="surname", id="surname", placeholder="surname")
+                        input(type="text", name="username", id="username",placeholder="username")
+                        input(type="number", name="age", id="age", age="age", placeholder="age")
+                        input(type="password", name="password", id="password", placeholder="password")
+                        br
+                        button Sign up
+        
+

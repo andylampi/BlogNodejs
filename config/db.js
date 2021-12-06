@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 const UserSchema = require("../model/userModel")
-const UserPost = require("../model/postModel")
+const postSchema = require("../model/postModel")
 
 
 const ConnectDB = () => {
@@ -15,8 +15,7 @@ const ConnectDB = () => {
 }
 
 let user = mongoose.model("User", UserSchema)
-let post = mongoose.model("Post", UserSchema)
-
+let post = mongoose.model("Post", postSchema)
 
 
 module.exports = {ConnectDB, user, post}

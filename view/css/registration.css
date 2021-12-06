@@ -1,0 +1,141 @@
+:root{
+    --color: white;
+    --width: 270px;
+    --width-circle: 40px;
+    --height-circle: 40px;
+    --height-line: 10px;
+    --width-line: 50px;
+
+
+}
+body{
+    background: hsl(218deg 50% 91%)
+}
+#registrationForm{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 33%;
+    top:20%;
+    background-color: #f1f7fe;
+    border-radius: 30px;
+    width: 300px;
+    padding: 2em;
+}
+#name{
+    border-radius: 20px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--color);
+    padding: 1em;
+    width: var(--width);
+
+}
+#surname{
+    border-radius: 20px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--color);
+    padding: 1em;
+    margin-top: 2em;
+    width: var(--width);
+
+}
+#username{
+    border-radius: 20px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--color);
+    padding: 1em;
+    margin-top: 2em;
+    width: var(--width);
+
+}
+#age{
+    border-radius: 20px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--color);
+    padding: 1em;
+    margin-top: 2em;
+    width: var(--width);
+
+
+}
+#password{
+    border-radius: 20px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--color);
+    padding: 1em;
+    margin-top: 2em;
+    width: var(--width);
+}
+#circleDad{
+    position: relative;
+    background-color: rgb(61,71,133);
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    left: 33%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#firstCircle{
+    position: relative;
+    height: var(--height-circle);
+    width: var(--width-circle);
+    background-color: white;
+    border-radius: 50%;
+    left: 17px;
+    top: 4px
+
+}
+#secondCircle{
+    position: relative;
+    height: var(--height-circle);
+    width: var(--width-circle);
+    background-color: white;
+    border-radius: 50%;
+    left: 42px;
+
+}
+#thirdCircle{
+    position: relative;
+    height: var(--height-circle);
+    width: var(--width-circle);
+    background-color: white;
+    border-radius: 50%;
+    left: 64px;
+    top: -106px
+
+}
+#firstLine{
+    position: relative;
+    background-color: white;
+    width: var(--width-line);
+    height: var(--height-line);
+    top: -130px;
+    transform: rotate(65deg);
+    left: 20px
+}
+#secondLine{
+    position: relative;
+    background-color: white;
+    width: var(--width-line);
+    height: var(--height-line);
+    top: -150px;
+    transform: rotate(113deg);
+    left: 53px
+}
+button{
+    border-radius: 20px;
+    height: 50px;
+    border: 0px;
+    background-color: rgb(61,71,133);
+    width: 300px;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 15px;
+}
