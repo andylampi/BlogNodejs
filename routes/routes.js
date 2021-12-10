@@ -5,7 +5,8 @@ const creationPost = require("../controller/creationPost")
 
 
 router.get("", (req,res)=>{
-    res.send("Hello")
+    console.log(req.cookies.auth)
+    res.render("index")
 })
 
 router.get("/create/", (req,res)=>{

@@ -3,7 +3,6 @@ const bcrypt = require("bcrypt")
 const { user } = require("../config/db")
 const dotenv = require("dotenv")
 const asyncHandler = require("express-async-handler")
-const { set } = require("mongoose")
 
 dotenv.config({ path: "../.env" })
 
@@ -16,7 +15,7 @@ let verificationUser = asyncHandler(async(req,res) => {
             if(!error && matched){
                 let tokenResponse = jwt.sign({
                     username : foundUser.username}, process.env.SECRET )
-                res.setHeader("token", tokenResponse)
+                res.cookie("auth", tokenResponse)
                 res.redirect("/")
             }
             else{
