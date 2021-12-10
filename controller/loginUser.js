@@ -16,6 +16,7 @@ let verificationUser = asyncHandler(async(req,res) => {
                 let tokenResponse = jwt.sign({
                     username : foundUser.username}, process.env.SECRET )
                 res.cookie("auth", tokenResponse)
+                res.cookie("username", username)
                 res.redirect("/")
             }
             else{
