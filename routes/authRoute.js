@@ -1,10 +1,10 @@
 const express = require("express")
 const router = express.Router()
-const creationUser = require("../controller/creationUser")
+const { creationUser, upload } = require("../controller/creationUser")
 const verificationUser = require("../controller/loginUser")
 
 
-router.post("/register/", creationUser)
+router.post("/register/", upload.single("image"), creationUser)
 router.get("/", (req,res) =>{
     res.render("registration")
 })

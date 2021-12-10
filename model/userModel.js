@@ -6,6 +6,7 @@ let UserSchema = mongoose.Schema({
     age: Number,
     username : String,
     password : String,
+    image : String,
     is_admin : {type : Boolean, default : false}
 })
 
