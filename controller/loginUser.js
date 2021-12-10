@@ -24,6 +24,9 @@ let verificationUser = asyncHandler(async(req,res) => {
             }
         })
     }
+    else{
+        res.status(404).send("User not found")
+    }
 })
 
 module.exports = verificationUser
