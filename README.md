@@ -9,7 +9,7 @@ it' have been used the pattern MVC and so the code is organizated. (In progress)
   **node server.js** 
  # Down Blog:
   **CTRL + C**
- ## Remember needs a file .env for run server
+ ## Remember the blog needs a file .env for run server
 
 ![image](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png)
 
