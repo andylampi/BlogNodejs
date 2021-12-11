@@ -1,0 +1,20 @@
+extends base.pug
+
+
+block head 
+    style 
+        include ./css/profile.css
+block body 
+    #container
+        img(src=foundUser.image, alt="")
+        h3= foundUser.name 
+        h3= foundUser.surname
+        h3= foundUser.username
+        h3= foundUser.age
+        button#name Change Name
+        button#surname Change surname
+        button#username Change username
+        button#age Change age
+        button#delete Delete account
+
+

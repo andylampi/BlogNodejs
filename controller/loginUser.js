@@ -17,7 +17,7 @@ let verificationUser = asyncHandler(async(req,res) => {
                     username : foundUser.username}, process.env.SECRET )
                 res.cookie("auth", tokenResponse)
                 res.cookie("username", username)
-                res.redirect("/")
+                res.redirect("/auth/profile/")
             }
             else{
                 res.status(404).send("Error")

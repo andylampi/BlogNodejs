@@ -3,10 +3,11 @@ const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const asyncHandler = require("express-async-handler")
 const multer  = require('multer')
-const upload = multer({ dest: 'imageProfile/' })
+
+const upload = multer({ dest: 'imgGlobal/imageProfile/'})
 
 let creationUser = asyncHandler(async (req,res) =>{
-    const image = await req.file.path
+    const image = await req.file.filename
     const {name, surname, username, age, password} = await req.body
     let foundUser = await user.findOne({ username })
     if(foundUser){

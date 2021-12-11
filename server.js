@@ -12,7 +12,7 @@ ConnectDB()
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "view"));
 app.use(express.urlencoded({ extended:false }))
-app.use(express.static('imageProfile'))
+app.use(express.static('imgGlobal'))
 app.use(cookieParser())
 
 

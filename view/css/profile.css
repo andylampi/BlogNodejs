@@ -1,0 +1,59 @@
+body{
+    background: hsl(218deg 50% 91%);
+    font-family: sans-serif;
+    color: rgb(61,71,133);
+}
+#container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 33%;
+    top:20%;
+    background-color: #f1f7fe;
+    border-radius: 30px;
+    width: 600px;
+    height: 400px;
+    padding: 2em;
+}
+img{
+    position: relative;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    left: 40%;
+}
+button{
+    border-radius: 20px;
+    height: 50px;
+    width: 150px;
+    border: 0px;
+    background-color: rgb(61,71,133);
+    color: white;
+    font-weight: 600;
+}
+#name{
+    position: absolute;
+    left: 500px;
+    top: 160px;
+}
+#surname{
+    position: absolute;
+    left: 500px;
+    top: 220px;
+}
+#username{
+    position: absolute;
+    left: 500px;
+    top: 280px;
+}
+#age{
+    position: absolute;
+    left: 500px;
+    top: 340px;
+}
+#delete{
+    background-color: red;
+    position: absolute;
+    left: 270px;
+    top: 400px;
+}
