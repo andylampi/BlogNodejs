@@ -7,4 +7,4 @@ it' have been used the pattern MVC and so the code is organizated.
   **node server.js** 
  # Down Blog:
   **CTRL + C**
- ## Remember there is a .env for run server
+ ## Remember needs a file .env for run server
