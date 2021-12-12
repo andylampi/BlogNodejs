@@ -8,4 +8,8 @@ html(lang="en")
             include ./css/index.css
         title blog Node
     block body 
-        h1 Hello
+    nav
+        a(id="homeNav") Home 
+        a(id="postNav") Post
+        a(id="profileNav", href=routeStatus)= status
+    h1 Hello

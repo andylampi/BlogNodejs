@@ -1,3 +1,36 @@
 body{
     background: hsl(218deg 50% 91%)
 }
+nav{
+    display: grid;
+    border: 0px;
+    background-color: #f1f7fe;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: 50px 50px 90px 90px hsl(218deg 50% 91%);
+    height: 40px;
+}
+
+#postNav{
+    position: relative;
+    font-family: sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 6%;    
+}                                                                                   
+#homeNav{
+    position: relative;
+    font-family: sans-serif;
+    position: absolute;
+    top: 6%;    
+}
+#profileNav{
+    position: relative;
+    font-family: sans-serif;
+    position: absolute;
+    top: 6%;  
+    left: 55%;
+    text-decoration-line: none;
+    color: black;
+}

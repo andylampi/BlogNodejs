@@ -1,3 +1,8 @@
+:root{
+    --padding-top-bottom : 15px;
+    --padding-left-right : 48px
+
+}
 body{
     background: hsl(218deg 50% 91%);
     font-family: sans-serif;
@@ -54,6 +59,23 @@ button{
 #delete{
     background-color: red;
     position: absolute;
-    left: 270px;
+    top: 400px;
+}
+a{
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgb(61,71,133);
+    color: white;
+    font-weight: 600;
+    padding-top: var(--padding-top-bottom);
+    padding-bottom: var(--padding-top-bottom);
+    padding-left: var(--padding-left-right);
+    padding-right: var(--padding-left-right);
+
+}
+#logout{
+    text-decoration-line: none;
+    position: absolute;
+    left: 500px;
     top: 400px;
 }

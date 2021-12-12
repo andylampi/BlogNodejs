@@ -14,7 +14,7 @@ let verificationUser = asyncHandler(async(req,res) => {
         bcrypt.compare(password, foundUser.password,  (error, matched) =>{
             if(!error && matched){
                 let tokenResponse = jwt.sign({
-                    username : foundUser.username}, process.env.SECRET )
+                    username : foundUser.username}, process.env.SECRET, {expiresIn : "2h"} )
                 res.cookie("auth", tokenResponse)
                 res.cookie("username", username)
                 res.redirect("/auth/profile/")
