@@ -1,6 +1,6 @@
 const logoutUser = (req, res) => {
-    res.cookie('auth', 0);
-    res.cookie('username', 0);
+    res.cookie('auth', undefined);
+    res.cookie('username', undefined);
     console.log(req.cookies)
     res.redirect("/")
 }

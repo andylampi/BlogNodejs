@@ -7,7 +7,8 @@ const creationPost = (req,res) =>{
         let firstPost = new post({
         title : req.query.title,
         text : req.query.text,
-        created_at : date.getTime()
+        created_at : date.getTime(),
+        user : req.user._id
 
     })
     firstPost.save((error)=>{

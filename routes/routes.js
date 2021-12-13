@@ -6,13 +6,12 @@ const auth = require("../middleware/auth")
 
 router.get("", (req,res)=>{
     let authIsTrue = req.cookies.auth
-    console.log(authIsTrue)
-    if(authIsTrue == 0){
-    res.render("index", {status : "Log In", routeStatus : "/auth/login/"})
+    if(authIsTrue == 0 || authIsTrue == "undefined"){
+        res.render("index", {status : "Log In", routeStatus : "/auth/login/"})
     }
     else{
-    res.render("index", {status : "Profile", routeStatus : "/auth/profile/"})
-
+        console.log(authIsTrue)
+        res.render("index", {status : "Profile", routeStatus : "/auth/profile/"})
     }
 })
 
