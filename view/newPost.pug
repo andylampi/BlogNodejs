@@ -1,0 +1,20 @@
+extends ./registration
+block head 
+        title Create Post
+        style
+            include ./css/registration.css
+            include ./css/post.css
+
+block body
+        div(id="registrationForm")
+                div(id="circleDad")
+                        p(id="firstCircle")
+                        p(id="secondCircle")
+                        p(id="thirdCircle")
+                        p(id="firstLine")
+                        p(id="secondLine")
+                form(action="/create/post")
+                    input(type="text", name="title", id="title", placeholder="Title")
+                    textarea(name="text", cols="32", rows="15", id="text") 
+                    br
+                    button Create

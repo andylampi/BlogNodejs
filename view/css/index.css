@@ -1,3 +1,11 @@
+:root{
+    --color-card: #f1f7fe;
+    --height-card: 400px;
+    --width-card: 300px;
+    --margin: 50px;
+    --par-box: 40px 30px 70px 50px #b5cce2;
+    --radi: 20px;
+}
 body{
     background: hsl(218deg 50% 91%)
 }
@@ -33,4 +41,70 @@ nav{
     left: 55%;
     text-decoration-line: none;
     color: black;
+}
+#post{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 3;
+}
+#card1{
+    background-color: var(--color-card);
+    height: var(--height-card);
+    width: var(--width-card);
+    margin: var(--margin);
+    box-shadow: var(--par-box);
+    border-radius: var(--radi);
+}
+#card2{
+    background-color: var(--color-card);
+    height: var(--height-card);
+    width: var(--width-card);
+    margin: var(--margin);
+    box-shadow: var(--par-box);
+    border-radius: var(--radi);
+
+
+}
+#card3{
+    background-color: var(--color-card);
+    height: var(--height-card);
+    width: var(--width-card);
+    margin: var(--margin);
+    box-shadow: var(--par-box);
+    border-radius: var(--radi);
+
+
+}
+#card4{
+    background-color: var(--color-card);
+    height: var(--height-card);
+    width: var(--width-card);
+    margin: var(--margin);
+    box-shadow: var(--par-box);
+    border-radius: var(--radi);
+
+
+}
+#card5{
+    background-color: var(--color-card);
+    height: var(--height-card);
+    width: var(--width-card);
+    margin: var(--margin);
+    box-shadow: var(--par-box);
+    border-radius: var(--radi);
+
+
+}
+#card6{
+    background-color: var(--color-card);
+    height: var(--height-card);
+    width: var(--width-card);
+    margin: var(--margin);
+    box-shadow: var(--par-box);
+    border-radius: var(--radi);
+
+}
+h3{
+    font-family: sans-serif;
 }
